@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { Container, Row, Col } from "reactstrap";
 
 //Import Images
@@ -19,15 +19,11 @@ class Section extends Component {
                     Make your Site Amazing & Unique with{" "}
                     <span className="text-primary">CodyCode</span>
                   </h1>
-
-                  <p>
                     <ul>
                       <li>Web Development</li>
                       <li>Ui/Ux Design</li>
                       <li>Full Stack Software Development</li>
                     </ul>
-                  </p>
-
                   {/* <div className="mt-4">
                     <Link to="#" className="btn btn-primary mt-2 mr-2">
                       Get Started
