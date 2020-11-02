@@ -6,23 +6,25 @@ import Service from "../../components/Service/service";
 import Features from "../../components/Features/feature";
 import Clients from '../../components/Client/client';
 import Pricing from "../../components/Pricing/pricing";
-import Subscribe from "../../components/Subscribe/Subscribe";
+// import Subscribe from "../../components/Subscribe/Subscribe";
 import Footer from "../../components/Footer/footer";
+import Contact from "../../components/Contact/Contact";
 
 class Index1 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            navItems: [
-                { id: 1, idnm: "home", navheading: "Home" },
-                { id: 2, idnm: "services", navheading: "Services" },
-                { id: 3, idnm: "features", navheading: "Features" },
-                { id: 4, idnm: "clients", navheading: "Clients" },
-                { id: 6, idnm: "pricing", navheading: "Plans" }
-            ],
-            pos: document.documentElement.scrollTop,
-            imglight: false,
-            navClass: ""
+          navItems: [
+            { id: 1, idnm: "home", navheading: "Home" },
+            { id: 2, idnm: "services", navheading: "Services" },
+            { id: 3, idnm: "features", navheading: "Features" },
+            { id: 4, idnm: "clients", navheading: "Clients" },
+            { id: 6, idnm: "pricing", navheading: "Plans" },
+            { id: 7, idnm: "contact", navheading: "Contact" },
+          ],
+          pos: document.documentElement.scrollTop,
+          imglight: false,
+          navClass: "",
         };
     }
 
@@ -46,32 +48,38 @@ class Index1 extends Component {
 
     render() {
         return (
-            <React.Fragment>
+          <React.Fragment>
+            {/* Importing Navbar */}
+            <NavbarPage
+              navItems={this.state.navItems}
+              navClass={this.state.navClass}
+              imglight={this.state.imglight}
+            />
 
-                {/* Importing Navbar */}
-                <NavbarPage navItems={this.state.navItems} navClass={this.state.navClass} imglight={this.state.imglight} />
+            {/* Importing section */}
+            <Section />
 
-                {/* Importing section */}
-                <Section />
+            {/* Importing Service */}
+            <Service />
 
-                {/* Importing Service */}
-                <Service />
+            {/* Importing Features */}
+            <Features />
 
-                {/* Importing Features */}
-                <Features />
+            {/* Importing Clients */}
+            <Clients />
 
-                {/* Importing Clients */}
-                <Clients />
+            {/* Importing Pricing */}
+            <Pricing />
 
-                {/* Importing Pricing */}
-                <Pricing />
+            {/* Importing Sunscribe */}
+            {/* <Subscribe /> */}
 
-                {/* Importing Sunscribe */}
-                <Subscribe />
+            {/* Importing Contact */}
+            <Contact />
 
-                {/* Importing Footer */}
-                <Footer />
-            </React.Fragment>
+            {/* Importing Footer */}
+            <Footer />
+          </React.Fragment>
         );
     }
 }
