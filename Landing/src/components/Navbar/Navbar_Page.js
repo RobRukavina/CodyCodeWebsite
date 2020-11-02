@@ -41,11 +41,12 @@ class NavbarPage extends Component {
                 <Navbar expand="lg" fixed="top" className={"navbar-custom sticky sticky-dark " + this.props.navClass}>
                     <Container>
                         <NavbarBrand className="logo text-uppercase" href="/">
-                            {
+                            CodyCode
+                            {/* {
                                 this.props.imglight === true ?
                                     <img src={logolight} alt="" className="logo-light" height="20" />
                                     : <img src={logodark} alt="" className="logo-dark" height="20" />
-                            }
+                            } */}
                         </NavbarBrand>
                         <NavbarToggler onClick={this.toggle} ><i className="mdi mdi-menu"></i></NavbarToggler>
 
@@ -64,7 +65,7 @@ class NavbarPage extends Component {
                                         </NavItem>
                                     ))}
                                 </Nav>
-                                <Button color="success" className="btn-rounded navbar-btn">Try for Free</Button>
+                                {/* <Button color="success" className="btn-rounded navbar-btn">Try for Free</Button> */}
                             </ScrollspyNav>
                         </Collapse>
                     </Container>
