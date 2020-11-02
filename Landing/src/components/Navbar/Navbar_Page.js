@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
 import {
-    Navbar,
-    Nav,
-    NavbarBrand,
-    NavbarToggler,
-    NavItem,
-    NavLink,
-    Container,
-    Collapse,
-    Button
+  Navbar,
+  Nav,
+  NavbarBrand,
+  NavbarToggler,
+  NavItem,
+  NavLink,
+  Container,
+  Collapse,
+  // Button
 } from "reactstrap";
 
 import ScrollspyNav from "./scrollSpy";
 
 //Import Images
-import logolight from "../../assets/images/logo-light.png";
-import logodark from "../../assets/images/logo-dark.png";
+// import logolight from "../../assets/images/logo-light.png";
+// import logodark from "../../assets/images/logo-dark.png";
 
 class NavbarPage extends Component {
     constructor(props) {
