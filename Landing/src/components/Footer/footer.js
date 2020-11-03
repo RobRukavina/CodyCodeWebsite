@@ -1,31 +1,31 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
-import { Container, Row, Col, Media } from "reactstrap";
-import FeatherIcon from 'feather-icons-react';
+// import { Link } from "react-router-dom";
+// import { Container, Row, Col, Media } from "reactstrap";
+// import FeatherIcon from 'feather-icons-react';
 
 //Import Footer link
 import FooterLinks from "./footer-links";
 
 class Footer extends Component {
-    state = {
-        links1 : [
-            { link : "#", title : "About Us" },
-            { link : "#", title : "Media & Press" },
-            { link : "#", title : "Career" },
-            { link : "#", title : "Blog" },
-        ],
-        links2 : [
-            { link : "#", title : "Pricing" },
-            { link : "#", title : "For Marketing" },
-            { link : "#", title : "For CEOs" },
-            { link : "#", title : "For Agencies" },
-            { link : "#", title : "Our Apps" },
-        ],
-    }
+    // state = {
+    //     links1 : [
+    //         { link : "#", title : "About Us" },
+    //         { link : "#", title : "Media & Press" },
+    //         { link : "#", title : "Career" },
+    //         { link : "#", title : "Blog" },
+    //     ],
+    //     links2 : [
+    //         { link : "#", title : "Pricing" },
+    //         { link : "#", title : "For Marketing" },
+    //         { link : "#", title : "For CEOs" },
+    //         { link : "#", title : "For Agencies" },
+    //         { link : "#", title : "Our Apps" },
+    //     ],
+    // }
     render() {
         return (
             <React.Fragment>
-        <footer className="footer">
+        {/* <footer className="footer">
             <Container>
                 <Row>
                     <Col lg={4} sm={6} >
@@ -93,9 +93,9 @@ class Footer extends Component {
                     </Col>
                 </Row>
             </Container>
-        </footer>
+        </footer> */}
                 {/* Render footer links */}
-                <FooterLinks/>
+                <FooterLinks style={{ display: "sticky"}}/>
             </React.Fragment>
         );
     }

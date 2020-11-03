@@ -3,31 +3,31 @@ import { Container, Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
 
 //Import Images
-import logolight from "../../assets/images/logo-light.png";
+import logo from "../../assets/images/codycodeSM.png";
 
 class FooterLinks extends Component {
     render() {
         return (
-            <React.Fragment>
-        <section className="bg-primary py-3">
-            <Container>
+          <React.Fragment>
+            <section className="bg-primary py-3">
+              <Container>
                 <Row>
-                    <Col lg={12}>
-                        <div className="float-sm-left">
-                            <Link to="#">
-                                <img src={logolight} alt="" height="20"/>
-                            </Link>
-                        </div>
-                        <div className="float-sm-right mt-4 mt-sm-0">
-                            <p className="copyright-desc text-white mb-0">{new Date().getFullYear()} © Invoza. Created by Themesdesign</p>
-                        </div>
-                    </Col>
+                  <Col lg={12}>
+                    <div className="float-sm-left">
+                      <Link to="#">
+                        <img src={logo} alt="" height="20" />
+                      </Link>
+                    </div>
+                    <div className="float-sm-right mt-4 mt-sm-0">
+                      <p className="copyright-desc text-white mb-0">
+                        {new Date().getFullYear()} © CodyCode
+                      </p>
+                    </div>
+                  </Col>
                 </Row>
-                
-            </Container>
-            
-        </section>
-            </React.Fragment>
+              </Container>
+            </section>
+          </React.Fragment>
         );
     }
 }

@@ -379,7 +379,7 @@ $value in $colors {
         content: "";
         position: absolute;
         width: 360px;
-        height: 330px;
+        height: 250px;
         background-color: rgba($primary, 0.1);
         border-radius: 30% 70% 59% 41% / 30% 38% 62% 70%;
         z-index: -1;
@@ -587,6 +587,42 @@ $value in $colors {
 /******************
     9.Responsive
 *******************/
+
+@media (min-width: 300px) {
+  .myLogoOnContact {
+   display: none;
+  }
+}
+@media (min-width: 320px) {
+  .myLogoOnContact {
+    display: none;
+  }
+}
+@media (min-width: 400px) {
+  .myLogoOnContact {
+    display: none;
+  }
+}
+@media (min-width: 576px) {
+  .myLogoOnContact {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .myLogoOnContact {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+ .myLogoOnContact {
+    display: none;
+ }
+}
+@media (min-width: 1200px) {
+ .myLogoOnContact {
+    display: block;
+ }
+}
 
 @media (max-width: 991px) {
     .navbar-custom {

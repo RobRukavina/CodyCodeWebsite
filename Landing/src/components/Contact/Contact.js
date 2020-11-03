@@ -12,7 +12,11 @@ class GetInTouch extends Component {
   render() {
     return (
       <React.Fragment>
-        <section className="section" id="contact" style={{ minHeight: "90vh" }}>
+        <section
+          className="section"
+          id="contact"
+          style={{ minHeight: "90vh" }}
+        >
           <Container>
             <SectionTitle
               title="Get In Touch"
@@ -21,7 +25,7 @@ class GetInTouch extends Component {
             />
             <Row className="mt-5 pt-2">
               <Col lg={5}>
-                <div className="contact-info">
+                <div className="contact-info" style={{ marginTop: "8rem" }}>
                   <Media>
                     <i className="mdi mdi-map-marker text-primary h4"></i>
                     <Media body className=" ml-4">
@@ -81,9 +85,10 @@ class GetInTouch extends Component {
                   src={LogoLG}
                   alt="#"
                   style={{
-                    height: "300px",
+                    height: "400px",
                     width: "auto",
-                    marginLeft: "13rem",
+                    marginLeft: "12rem",
+                    marginTop: "3rem",
                   }}
                 ></img>
               </Col>

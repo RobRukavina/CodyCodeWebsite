@@ -3,15 +3,19 @@ import React, { Component } from "react";
 import { Container, Row, Col } from "reactstrap";
 
 //Import Images
-import homeImg from "../../assets/images/CodyCollins.jpg";
+import homeImg from "../../assets/images/webDev.jpg";
 
 class Section extends Component {
   render() {
     return (
       <React.Fragment>
-        <section className="hero-section" id="home">
+        <section
+          className="hero-section"
+          id="home"
+          style={{ minHeight: "100vh" }}
+        >
           <Container>
-            <Row className="justify-content-center">
+            <Row className="justify-content-center" style={{ paddingTop: "5rem"}}>
               <Col lg={6}>
                 <div className="hero-wrapper mb-4">
                   <p className="font-16 text-uppercase">Check Out Our Work</p>
@@ -19,11 +23,11 @@ class Section extends Component {
                     Make your Site Amazing & Unique with{" "}
                     <span className="text-primary">CodyCode</span>
                   </h1>
-                    <ul>
-                      <li>Web Development</li>
-                      <li>Ui/Ux Design</li>
-                      <li>Full Stack Software Development</li>
-                    </ul>
+                  <ul style={{  fontSize: "large"  }}>
+                    <li>Web Development</li>
+                    <li>Ui/Ux Design</li>
+                    <li>Full Stack Software Development</li>
+                  </ul>
                   {/* <div className="mt-4">
                     <Link to="#" className="btn btn-primary mt-2 mr-2">
                       Get Started
@@ -39,7 +43,8 @@ class Section extends Component {
                 <div className="home-img mt-5 mt-lg-0">
                   <img
                     src={homeImg}
-                    alt=""
+                    style={{ objectFit: "cover" }}
+                    alt="#WOCinTech Chat"
                     className="img-fluid mx-auto d-block"
                   />
                 </div>

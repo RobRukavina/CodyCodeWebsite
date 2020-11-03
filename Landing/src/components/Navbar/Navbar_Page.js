@@ -48,7 +48,13 @@ class NavbarPage extends Component {
             >
               <Container>
                 <NavbarBrand className="logo text-uppercase" href="/">
-                  <img src={logo} alt="logo"></img>
+                  <img
+                    src={logo}
+                    alt="logo"
+                    style={{
+                      maxHeight: "30px",
+                    }}
+                  ></img>
                   {/* {
                                 this.props.imglight === true ?
                                     <img src={logolight} alt="" className="logo-light" height="20" />

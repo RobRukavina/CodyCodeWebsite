@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from "reactstrap";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 //Import Section Title
 import SectionTitle from "../common/section-title";
@@ -23,32 +23,33 @@ class Process extends Component {
     
     render() {
         return (
-            <React.Fragment>
-        <section className="section bg-light" id="services">
-            <Container>
-            <SectionTitle
-                subtitle="Services"
-                title="Services We Provide"
-                desc="It will be as simple as occidental in fact, it will be Occidental."
-            />
+          <React.Fragment>
+            <section
+              className="section bg-light"
+              id="services"
+              style={{ minHeight: "100vh" }}
+            >
+              <Container>
+                <SectionTitle
+                  subtitle="Services"
+                  title="Services We Provide"
+                  desc="It will be as simple as occidental in fact, it will be Occidental."
+                />
 
                 <Row>
-                    <ServiceBox services={this.state.services} />
+                  <ServiceBox services={this.state.services} />
                 </Row>
-                
 
                 <Row className="mt-4">
-                    <Col lg={12}>
-                        <div className="text-center">
-                            <Link to="#" className="btn btn-success">View more</Link>
-                        </div>
-                    </Col>
+                  <Col lg={12}>
+                    <div className="text-center">
+                      {/* <Link to="#" className="btn btn-success">View more</Link> */}
+                    </div>
+                  </Col>
                 </Row>
-                
-            </Container>
-            
-        </section>
-            </React.Fragment>
+              </Container>
+            </section>
+          </React.Fragment>
         );
     }
 }
