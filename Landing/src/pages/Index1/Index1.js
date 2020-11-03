@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 
 import NavbarPage from "../../components/Navbar/Navbar_Page";
 import Section from './section';
-import Service from "../../components/Service/service";
+// import Service from "../../components/Service/service";
 import Features from "../../components/Features/feature";
-import Clients from '../../components/Client/client';
+// import Clients from '../../components/Client/client';
 import Pricing from "../../components/Pricing/pricing";
 // import Subscribe from "../../components/Subscribe/Subscribe";
 import Footer from "../../components/Footer/footer";
@@ -16,9 +16,9 @@ class Index1 extends Component {
         this.state = {
           navItems: [
             { id: 1, idnm: "home", navheading: "Home" },
-            { id: 2, idnm: "services", navheading: "Services" },
+            // { id: 2, idnm: "services", navheading: "Services" },
             { id: 3, idnm: "features", navheading: "Team" },
-            { id: 4, idnm: "clients", navheading: "Clients" },
+            // { id: 4, idnm: "clients", navheading: "Clients" },
             { id: 6, idnm: "pricing", navheading: "Plans" },
             { id: 7, idnm: "contact", navheading: "Contact" },
           ],
@@ -60,13 +60,13 @@ class Index1 extends Component {
             <Section />
 
             {/* Importing Service */}
-            <Service />
+            {/* <Service /> */}
 
             {/* Importing Features */}
             <Features />
 
             {/* Importing Clients */}
-            <Clients />
+            {/* <Clients /> */}
 
             {/* Importing Pricing */}
             <Pricing />
