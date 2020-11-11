@@ -12,11 +12,7 @@ class GetInTouch extends Component {
   render() {
     return (
       <React.Fragment>
-        <section
-          className="section"
-          id="contact"
-          style={{ minHeight: "90vh" }}
-        >
+        <section className="section" id="contact" style={{ minHeight: "90vh" }}>
           <Container>
             <SectionTitle
               title="Get In Touch"
@@ -54,7 +50,11 @@ class GetInTouch extends Component {
                     <Media body className="ml-4">
                       <p className="text-muted">
                         Email:{" "}
-                        <a href="https://mail.google.com/mail/?view=cm&source=mailto&to=cscollins.0311@gmail.com">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://mail.google.com/mail/?view=cm&source=mailto&to=cscollins.0311@gmail.com"
+                        >
                           cscollins.0311@gmail.com
                         </a>
                       </p>
